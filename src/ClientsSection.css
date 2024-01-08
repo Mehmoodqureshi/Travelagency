@@ -1,0 +1,25 @@
+/* ClientsSection.css */
+
+.clients-section {
+    overflow: hidden;
+  }
+  
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .client-item:hover {
+    transform: translateX(100%);
+  }
+  
+  .clients-section:hover .clients-grid {
+    height: 0;
+  }
+  
+  .clients-section:hover .client-item {
+    transform: translateX(0);
+  }
+  
